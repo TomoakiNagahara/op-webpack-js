@@ -101,9 +101,9 @@
 			}else
 
 			//	...
-			{  }
+			{ /* last else is empty  */ }
 
-			//	...
+			//	Add text value to element.
 			span.innerText = val;
 		}
 
