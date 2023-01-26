@@ -1,5 +1,5 @@
 <?php
-/** op-webpack-js:/js/op/action.php
+/** op-webpack-js:/action.php
  *
  * @created   2018-04-12
  * @version   1.0
