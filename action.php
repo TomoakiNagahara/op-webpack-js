@@ -21,4 +21,5 @@ return [
 	__DIR__.'/Hash',
 	__DIR__.'/Translate',
 	__DIR__.'/Translator',
+	__DIR__.'/Translate_Language',
 ];
