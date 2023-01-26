@@ -20,4 +20,5 @@ return [
 	__DIR__.'/form-disabler',
 	__DIR__.'/Hash',
 	__DIR__.'/Translate',
+	__DIR__.'/Translator',
 ];
