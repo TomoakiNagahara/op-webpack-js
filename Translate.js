@@ -20,7 +20,7 @@
 	//	...
 	$OP['Translate'] = async function(html, callback){
 		//	...
-		let item_language_code = 'tranlate_language_code';
+		let item_language_code = "<?php echo OP()->Config('translate')['item_language_code'] ?? 'null'; ?>";
 		let lang    = localStorage.getItem(item_language_code);
 		if(!lang ){
 			D('Does not selected language code.');
