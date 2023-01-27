@@ -99,6 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		//	...
 		let language_code = this.href;
 		localStorage.setItem(item_language_code, language_code);
+
+		//	...
+		location.reload();
+
 		//	...
 		return false;
 	};
