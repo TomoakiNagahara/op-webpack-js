@@ -13,8 +13,8 @@
 //	...
 document.addEventListener('DOMContentLoaded', () => {
 	//	...
-	let item_language_list = 'tranlate_language_list';
-	let item_language_code = 'tranlate_language_code';
+	let item_language_list = "<?php echo OP()->Config('translate')['item_language_list'] ?? 'null'; ?>";
+	let item_language_code = "<?php echo OP()->Config('translate')['item_language_code'] ?? 'null'; ?>";
 
 	//	...
 	let json = localStorage.getItem(item_language_list);
