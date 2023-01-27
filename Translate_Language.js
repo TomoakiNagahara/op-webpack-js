@@ -8,7 +8,7 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php if( OP()->Config('translate')['execute'] ?? null ): ?> */
+/* <?php if( OP()->Config('execute')['translate'] ?? null ): ?> */
 
 //	...
 document.addEventListener('DOMContentLoaded', () => {
