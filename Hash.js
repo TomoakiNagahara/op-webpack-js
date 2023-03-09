@@ -10,7 +10,7 @@
 //	...
 (function(){
 	//	...
-	if(!$OP ){
+	if( typeof $OP === 'undefined' ){
 		$OP = {};
 	}
 
