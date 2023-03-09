@@ -1,6 +1,9 @@
 
 /** op-webpack-js:/Translator.js
  *
+ *  Automatically translator.
+ *  Translate target tag is data-i18n or data-translate = true.
+ * 
  * @created   2023-01-23
  * @version   1.0
  * @package   op-app-skeleton-2020-nep
@@ -11,14 +14,12 @@
 /* <?php if( OP()->Config('execute')['translate'] ?? null ): ?> */
 
 //	...
-(function(){
+document.addEventListener('DOMContentLoaded', () => {
 	//	...
 	if( typeof $OP.Translate === 'undefined' ){
 		return;
 	}
 
-	//	...
-	$OP['Translator'] = function(){
 		//	...
 		['i18n','translate'].forEach(key => {
 			//	...
@@ -30,13 +31,6 @@
 				});
 			});
 		});
-	};
-})();
-
-//	...
-document.addEventListener('DOMContentLoaded', () => {
-	//	...
-	$OP['Translator']();
 });
 
 /* <?php endif; ?> */
