@@ -15,7 +15,7 @@
 	}
 
 	//	...
-	$OP['Hash'] = async function(text, algorithm){
+	$OP.Hash = async function(text, algorithm){
 		if(!algorithm ){
 			algorithm = 'SHA-256';
 		}
