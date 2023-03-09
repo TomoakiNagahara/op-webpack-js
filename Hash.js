@@ -8,7 +8,7 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 //	...
-(function(){
+
 	//	...
 	if( typeof $OP === 'undefined' ){
 		$OP = {};
@@ -19,8 +19,7 @@
 		if(!algorithm ){
 			algorithm = 'SHA-256';
 		}
-		const uint8  = new TextEncoder().encode(text)
-		const digest = await crypto.subtle.digest(algorithm, uint8)
-		return Array.from(new Uint8Array(digest)).map(v => v.toString(16).padStart(2,'0')).join('')
-	}
-})();
+		const uint8  = new TextEncoder().encode(text);
+		const digest = await crypto.subtle.digest(algorithm, uint8);
+		return Array.from(new Uint8Array(digest)).map(v => v.toString(16).padStart(2,'0')).join('');
+	};
