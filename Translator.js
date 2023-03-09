@@ -24,7 +24,7 @@
 			//	...
 			document.querySelectorAll(`[data-${key}="true"]`).forEach(html => {
 				//	...
-				$OP['Translate'](html.innerHTML, function(result){
+				$OP.Translate.Fetch(html.innerHTML, function(result){
 					html.innerHTML    =  result;
 					html.dataset[key] = 'false';
 				});
