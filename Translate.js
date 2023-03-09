@@ -18,7 +18,12 @@
 	}
 
 	//	...
-	$OP['Translate'] = async function(html, callback){
+	if( typeof $OP.Translate === 'undefined' ){
+		$OP.Translate = {};
+	}
+
+	//	...
+	$OP.Translate.Fetch = async function(html, callback){
 		//	...
 		let item_language_code = "<?php echo OP()->Config('translate')['item_language_code'] ?? 'null'; ?>";
 		let lang    = localStorage.getItem(item_language_code);
