@@ -13,8 +13,8 @@
 //	...
 (function(){
 	//	...
-	if(!$OP ){
-		$OP = {};
+	if( typeof $OP.Translate === 'undefined' ){
+		return;
 	}
 
 	//	...
