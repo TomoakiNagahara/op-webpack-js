@@ -15,6 +15,7 @@
  * @param     STRING
  * @returns   string
  */
+/*
 const ToLowerCase = function(s){
 	if ('i' === 'I'.toUpperCase()) {
 		return s.toUpperCase();
@@ -22,3 +23,4 @@ const ToLowerCase = function(s){
 		return s.replace(/[A-Z]/g, function(ch) {return String.fromCharCode(ch.charCodeAt(0) | 32);});
 	}
 }
+*/
