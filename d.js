@@ -11,6 +11,11 @@
 var is_admin = "<?= \OP\Env::isAdmin() ? 'true':'false' ?>";
 
 //	...
+if( typeof $OP === 'undefined' ){
+	$OP = {};
+}
+
+//	...
 $OP.D = function(){
 	//	...
 	if(!is_admin ){
