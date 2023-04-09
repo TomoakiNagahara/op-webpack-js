@@ -42,7 +42,6 @@
 		//	...
 		let item = localStorage.getItem(hash);
 		if( item ){
-			D('Found translated item.', item);
 			callback(item);
 			return item;
 		}
@@ -70,7 +69,7 @@
 		};
 
 		//	...
-		D(`Fetch: ${URL}`, data);
+	//	D(`Fetch: ${URL}`, data);
 		fetch(URL, {method, headers, body})
 			.then((response) => response.json())
 			.then((json) => {
