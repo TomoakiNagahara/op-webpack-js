@@ -49,7 +49,7 @@
 		//	...
 		if( type === 'string' ){
 			//	...
-			if( is_notice ){
+			if( is_notice && val !== '' ){
 				val = $OP.Path.Compress(val);
 			}
 
