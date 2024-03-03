@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	//	...
 	let item_language_list = "<?php echo OP()->Config('translate')['item_language_list'] ?? 'null'; ?>";
 	let item_language_code = "<?php echo OP()->Config('translate')['item_language_code'] ?? 'null'; ?>";
+	let language_area      = GetLanguageArea();
+
+	//	...
+	if(!language_area ){
+		return;
+	}
 
 	//	...
 	let json = localStorage.getItem(item_language_list);
@@ -23,6 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		Display(json);
 	}else{
 		Fetch();
+	}
+
+	/** Gets the area that displays the languages list.
+	 * 
+	 * @created		2024-01-02
+	 */
+	function GetLanguageArea(){
+		//	...
+		let name = "<?php echo OP()->Config('translate')['language-area-id'] ?? 'null'; ?>";
+		let area = document.querySelector(`#${name}`);
+		if(!area ){
+			D(`Does not found '#${name}'`);
+			return;
+		}
+		return area;
 	}
 
 	//	...
@@ -62,12 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	//	...
 	function Display(json){
 		//	...
-		let name = "<?php echo OP()->Config('translate')['language-area-id'] ?? 'null'; ?>";
-		let area = document.querySelector(`#${name}`);
-		if(!area ){
-			D(`Does not found '#${name}'`);
-			return;
-		}
+		area = GetLanguageArea();
 
 		//	...
 		for(let key in json['result']['language'] ){
