@@ -3,7 +3,7 @@
  *
  * @created   2023-01-22
  * @version   1.0
- * @package   op-app-skeleton-2020-nep
+ * @package   op-webpack-js
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
