@@ -12,6 +12,8 @@
 
 /* <?php OP()->WebPack()->Auto('asset:/webpack/js/Hash.js') ?> */
 
+/* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
+
 //	...
 (function(){
 	//	...
@@ -58,7 +60,7 @@
 
 	//	...
 	function Fetch(lang, html, callback){
-		let URL     = 'https://onepiece-framework.com/api/i18n/translate/';
+		let URL     = 'https://<?= $host ?>/api/i18n/translate/';
 		let method  = "POST";
 		let data    = {
 			to     : lang,
