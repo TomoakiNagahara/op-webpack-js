@@ -12,6 +12,8 @@
 
 /* <?php OP()->WebPack()->Auto('asset:/webpack/js/d.js') ?> */
 
+/* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
+
 //	...
 document.addEventListener('DOMContentLoaded', () => {
 	//	...
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	//	...
 	function Fetch(){
 		//	...
-		let URL = 'https://onepiece-framework.com/api/i18n/language?target=language';
+		let URL = 'https://<?= $host ?>/api/i18n/language?target=language';
 		D(`Fetch: ${URL}`);
 		fetch(URL)
 			.then((response) => response.json())
