@@ -11,8 +11,6 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php if( OP()->Config('execute')['translate'] ?? null ): ?> */
-
 /* <?php OP()->WebPack()->Auto('asset:/webpack/js/Translate.js') ?> */
 
 //	...
@@ -34,5 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 });
-
-/* <?php endif; ?> */
