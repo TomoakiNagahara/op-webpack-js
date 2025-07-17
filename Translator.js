@@ -11,7 +11,7 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php OP()->WebPack()->Auto('asset:/webpack/js/Translate.js') ?> */
+/* <?php OP()->Unit()->WebPack()->Auto('asset:/webpack/js/Translate.js') ?> */
 
 //	...
 document.addEventListener('DOMContentLoaded', () => {
