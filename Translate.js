@@ -8,9 +8,9 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php OP()->WebPack()->Auto('asset:/webpack/js/Hash.js') ?> */
-
 /* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
+
+/* <?php OP()->Unit()->WebPack()->Auto('asset:/webpack/js/Hash.js') ?> */
 
 //	...
 (function(){
