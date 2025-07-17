@@ -8,8 +8,6 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php if( OP()->Config('execute')['translate'] ?? null ): ?> */
-
 /* <?php OP()->WebPack()->Auto('asset:/webpack/js/Hash.js') ?> */
 
 /* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
@@ -103,5 +101,3 @@
 		//	fetch()
 	} // Fetch()
 })();
-
-/* <?php endif; ?> */
