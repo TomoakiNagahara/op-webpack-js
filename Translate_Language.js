@@ -8,8 +8,6 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php if( OP()->Config('execute')['translate'] ?? null ): ?> */
-
 /* <?php OP()->WebPack()->Auto('asset:/webpack/js/d.js') ?> */
 
 /* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
@@ -111,5 +109,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		return false;
 	};
 });
-
-/* <?php endif; ?> */
