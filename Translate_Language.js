@@ -8,12 +8,13 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-/* <?php OP()->WebPack()->Auto('asset:/webpack/js/d.js') ?> */
-
 /* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
+
+/* <?php OP()->Unit()->WebPack()->Auto('asset:/webpack/js/d.js') ?> */
 
 //	...
 document.addEventListener('DOMContentLoaded', () => {
+
 	//	...
 	let item_language_list = "<?php echo OP()->Config('translate')['item_language_list'] ?? 'null'; ?>";
 	let item_language_code = "<?php echo OP()->Config('translate')['item_language_code'] ?? 'null'; ?>";
