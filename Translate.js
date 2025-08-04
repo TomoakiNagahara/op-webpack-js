@@ -34,6 +34,9 @@
 			return;
 		}
 
+		//	For MS translator defect.
+		html = html.replace(/\$/g, "&#36;");
+
 		//	...
 		let hash = await $OP['Hash'](`${lang}, ${html}`,'SHA-1');
 		if(!hash ){
