@@ -1,10 +1,10 @@
 
-/** op-webpack-js:/js/op/args.js
+/** op-webpack-js:/args.js
  *
  * @created   2017-07-31
  * @version   1.0
  * @package   op-webpack-js
- * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @author    Tomoaki Nagahara
  * @copyright Tomoaki Nagahara All right reserved.
  */
 //	...
