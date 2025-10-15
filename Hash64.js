@@ -8,14 +8,21 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
+/** $OP
+ *
+ */
+if( typeof $OP === 'undefined' ){
+	$OP = {};
+}
+
 /** To hash 64bit likely.
  *
  * ```
  * Usage:
- * console.log( Hash64("Hello new world 🌏") );
+ * console.log( $OP.Hash64("Hello new world 🌏") );
  * ```
  */
-function Hash64(str){
+$OP.Hash64 = function(str){
 	//	...
 	const utf8 = new TextEncoder().encode(str);
 	let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
@@ -37,4 +44,4 @@ function Hash64(str){
 	// 64bit like
 	return ((h2 >>> 0).toString(16).padStart(8, '0') +
 			(h1 >>> 0).toString(16).padStart(8, '0'));
-}
+};

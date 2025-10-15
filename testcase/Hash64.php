@@ -16,8 +16,6 @@ OP()->Unit()->WebPack()->Auto('asset:/webpack/js/Hash64.js');
 	<li>Open the developer console in your browser.</li>
 	<li>
 		Enter the following code into the Developer Console:
-<pre><code>
-console.log( Hash64("Hello new world 🌏") );
-</code></pre>
+		<pre><code>console.log( $OP.Hash64("Hello new world 🌏") );</code></pre>
 	</li>
 </ol>
