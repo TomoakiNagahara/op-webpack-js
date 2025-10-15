@@ -1,12 +1,12 @@
 
-/** op-webpack-js:/js/op/path.js
+/** op-webpack-js:/path.js
  *
  * This script user is just developers.
  *
  * @created   2017-10-05
  * @version   1.0
  * @package   op-webpack-js
- * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @author    Tomoaki Nagahara
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
