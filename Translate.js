@@ -10,7 +10,7 @@
 
 /* <?php if( empty( $host = OP()->Config('translate')['host'] ?? null ) ){ return; } ?> */
 
-/* <?php OP()->Unit()->WebPack()->Auto('asset:/webpack/js/Hash.js') ?> */
+/* <?php OP()->Unit()->WebPack()->Auto('asset:/webpack/js/Hash64.js') ?> */
 
 //	...
 (function(){
@@ -38,7 +38,8 @@
 		html = html.replace(/\$/g, "&#36;");
 
 		//	...
-		let hash = await $OP['Hash'](`${lang}, ${html}`,'SHA-1');
+	//	let hash = await $OP['Hash']  (`${lang}, ${html}`,'SHA-1');
+		let hash =       $OP['Hash64'](`${lang}, ${html}`);
 		if(!hash ){
 			console.error('Hash is empty.');
 			return;
