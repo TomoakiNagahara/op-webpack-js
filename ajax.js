@@ -1,10 +1,10 @@
 
-/** op-webpack-js:/js/op/ajax.js
+/** op-webpack-js:/ajax.js
  *
  * @created   2018-09-18
  * @version   1.0
  * @package   op-webpack-js
- * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @author    Tomoaki Nagahara
  * @copyright Tomoaki Nagahara All right reserved.
  */
 //	...
