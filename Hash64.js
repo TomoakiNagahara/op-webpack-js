@@ -17,6 +17,10 @@ if( typeof $OP === 'undefined' ){
 
 /** To hash 64bit likely.
  *
+ * - 64bit equivalent
+ * - Base36(0-9a-z)
+ * - Fixed length 13
+ *
  * ```
  * Usage:
  * console.log( $OP.Hash64("Hello new world 🌏") );
@@ -41,7 +45,22 @@ $OP.Hash64 = function(str){
 	h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^
 	     Math.imul(h1 ^ (h1 >>> 13), 3266489909);
 
+	/*
 	// 64bit like
 	return ((h2 >>> 0).toString(16).padStart(8, '0') +
 			(h1 >>> 0).toString(16).padStart(8, '0'));
+	*/
+
+	//	8byte(64bit) --> BigInt
+	const bytes = new Uint8Array(8);
+	const dv = new DataView(bytes.buffer);
+	dv.setUint32(0, h2 >>> 0); // Higher
+	dv.setUint32(4, h1 >>> 0); // Lower
+
+	//	...
+	let v = 0n;
+	for(let i = 0; i < 8; i++){ v = (v << 8n) | BigInt(bytes[i]) };
+
+	//	Base36 string. 64 bits theoretically require 13 digits.
+	return v.toString(36).padStart(13, '0');
 };
